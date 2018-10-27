@@ -1280,3 +1280,192 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/" for ::1 at 2018-10-27 16:47:25 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=QTEPK0JLXJTHRWA401B1AAEDQ01YBMVMOT4TVUJZCSZGYVLZ&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=F3TJV25P2A2UPKHJTTCC3CEBBEM3WYVKWFPD4FJTRVYOMCT5" for ::1 at 2018-10-27 16:47:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /theresa_morelli.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /theresa_morelli.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /theresa_morelli.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (80.7ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (448.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (317.7ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (464.0ms)
+
+
+Started GET "/friends" for ::1 at 2018-10-27 17:10:33 -0400
+Processing by SearchesController#friends as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=QTEPK0JLXJTHRWA401B1AAEDQ01YBMVMOT4TVUJZCSZGYVLZ&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=WHZQJEHANHSLPOZNV0NNOPF1JBR4P1V4B1CZZHPHAGVNKFSQ" for ::1 at 2018-10-27 17:10:39 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"WHZQJEHANHSLPOZNV0NNOPF1JBR4P1V4B1CZZHPHAGVNKFSQ"}
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Access to this page has been denied.</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> <style> html, body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #000; } a { color: #c5c5c5; text-decoration: none; } .container { align-items: center; display: flex; flex: 1; justify-content: space-between; flex-direction: column; height: 100%; } .container > div { width: 100%; display: flex; justify-content: center; } .container > div > div { display: flex; width: 80%; } .customer-logo-wrapper { padding-top: 2rem; flex-grow: 0; background-color: #fff; visibility: hidden; } .customer-logo { border-bottom: 1px solid #000; } .customer-logo > img { padding-bottom: 1rem; max-height: 50px; max-width: 100%; } .page-title-wrapper { flex-grow: 2; } .page-title { flex-direction: column-reverse; } .content-wrapper { flex-grow: 5; } .content { flex-direction: column; } .page-footer-wrapper { align-items: center; flex-grow: 0.2; background-color: #000; color: #c5c5c5; font-size: 70%; } @media (min-width: 768px) { html, body { height: 100%; } } </style> <!-- Custom CSS -->  </head> <body> <section class="container"> <div class="customer-logo-wrapper"> <div class="customer-logo"> <img src="" alt="Logo"/> </div> </div> <div class="page-title-wrapper"> <div class="page-title"> <h1>Please verify you are a human</h1> </div> </div> <div class="content-wrapper"> <div class="content"> <div id="px-captcha"> </div> <p> Access to this page has been denied because we believe you are using automation tools to browse the website. </p> <p> This may happen as a result of the following: </p> <ul> <li> Javascript is disabled or blocked by an extension (ad blockers for example) </li> <li> Your browser does not support cookies </li> </ul> <p> Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking them from loading. </p> <p> Reference ID: #bd61a770-da2c-11e8-8770-7bef21607c9f </p> </div> </div> <div class="page-footer-wrapper"> <div class="page-footer"> <p> Powered by <a href="https://www.perimeterx.com/whywasiblocked">PerimeterX</a> , Inc. </p> </div> </div> </section> <!-- Px --> <script> window._pxAppId = 'PX0UqK4c76'; window._pxJsClientSrc = '/0UqK4c76/init.js'; window._pxFirstPartyEnabled = true; window._pxVid = ''; window._pxUuid = 'bd61a770-da2c-11e8-8770-7bef21607c9f'; window._pxHostUrl = '/0UqK4c76/xhr'; </script> <script src="/0UqK4c76/captcha/captcha.js?a=c&u=bd61a770-da2c-11e8-8770-7bef21607c9f&v=&m=0"></script> <!-- Custom Script -->  </body> </html>'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.6ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.2ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (240.6ms)
+
+
+Started GET "/search" for ::1 at 2018-10-27 17:11:45 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=QTEPK0JLXJTHRWA401B1AAEDQ01YBMVMOT4TVUJZCSZGYVLZ&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=S22CTWDXY0JEH1OFHNNNP3CELLJ3UF0QM4BXVC2DHO52E005" for ::1 at 2018-10-27 17:11:48 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"S22CTWDXY0JEH1OFHNNNP3CELLJ3UF0QM4BXVC2DHO52E005"}
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Access to this page has been denied.</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> <style> html, body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #000; } a { color: #c5c5c5; text-decoration: none; } .container { align-items: center; display: flex; flex: 1; justify-content: space-between; flex-direction: column; height: 100%; } .container > div { width: 100%; display: flex; justify-content: center; } .container > div > div { display: flex; width: 80%; } .customer-logo-wrapper { padding-top: 2rem; flex-grow: 0; background-color: #fff; visibility: hidden; } .customer-logo { border-bottom: 1px solid #000; } .customer-logo > img { padding-bottom: 1rem; max-height: 50px; max-width: 100%; } .page-title-wrapper { flex-grow: 2; } .page-title { flex-direction: column-reverse; } .content-wrapper { flex-grow: 5; } .content { flex-direction: column; } .page-footer-wrapper { align-items: center; flex-grow: 0.2; background-color: #000; color: #c5c5c5; font-size: 70%; } @media (min-width: 768px) { html, body { height: 100%; } } </style> <!-- Custom CSS -->  </head> <body> <section class="container"> <div class="customer-logo-wrapper"> <div class="customer-logo"> <img src="" alt="Logo"/> </div> </div> <div class="page-title-wrapper"> <div class="page-title"> <h1>Please verify you are a human</h1> </div> </div> <div class="content-wrapper"> <div class="content"> <div id="px-captcha"> </div> <p> Access to this page has been denied because we believe you are using automation tools to browse the website. </p> <p> This may happen as a result of the following: </p> <ul> <li> Javascript is disabled or blocked by an extension (ad blockers for example) </li> <li> Your browser does not support cookies </li> </ul> <p> Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking them from loading. </p> <p> Reference ID: #e6948770-da2c-11e8-aa67-b5c0d28281c7 </p> </div> </div> <div class="page-footer-wrapper"> <div class="page-footer"> <p> Powered by <a href="https://www.perimeterx.com/whywasiblocked">PerimeterX</a> , Inc. </p> </div> </div> </section> <!-- Px --> <script> window._pxAppId = 'PX0UqK4c76'; window._pxJsClientSrc = '/0UqK4c76/init.js'; window._pxFirstPartyEnabled = true; window._pxVid = ''; window._pxUuid = 'e6948770-da2c-11e8-aa67-b5c0d28281c7'; window._pxHostUrl = '/0UqK4c76/xhr'; </script> <script src="/0UqK4c76/captcha/captcha.js?a=c&u=e6948770-da2c-11e8-aa67-b5c0d28281c7&v=&m=0"></script> <!-- Custom Script -->  </body> </html>'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.0ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (80.1ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (231.0ms)
+
+
+Started GET "/auth?code=LNPLL1ZCJ2IIKH5TZKYTWE1AG5ED30UWFZ2SV1XGJE5PYEOP" for ::1 at 2018-10-27 17:14:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"LNPLL1ZCJ2IIKH5TZKYTWE1AG5ED30UWFZ2SV1XGJE5PYEOP"}
+Completed 500 Internal Server Error in 205ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Access to this page has been denied.</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> <style> html, body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #000; } a { color: #c5c5c5; text-decoration: none; } .container { align-items: center; display: flex; flex: 1; justify-content: space-between; flex-direction: column; height: 100%; } .container > div { width: 100%; display: flex; justify-content: center; } .container > div > div { display: flex; width: 80%; } .customer-logo-wrapper { padding-top: 2rem; flex-grow: 0; background-color: #fff; visibility: hidden; } .customer-logo { border-bottom: 1px solid #000; } .customer-logo > img { padding-bottom: 1rem; max-height: 50px; max-width: 100%; } .page-title-wrapper { flex-grow: 2; } .page-title { flex-direction: column-reverse; } .content-wrapper { flex-grow: 5; } .content { flex-direction: column; } .page-footer-wrapper { align-items: center; flex-grow: 0.2; background-color: #000; color: #c5c5c5; font-size: 70%; } @media (min-width: 768px) { html, body { height: 100%; } } </style> <!-- Custom CSS -->  </head> <body> <section class="container"> <div class="customer-logo-wrapper"> <div class="customer-logo"> <img src="" alt="Logo"/> </div> </div> <div class="page-title-wrapper"> <div class="page-title"> <h1>Please verify you are a human</h1> </div> </div> <div class="content-wrapper"> <div class="content"> <div id="px-captcha"> </div> <p> Access to this page has been denied because we believe you are using automation tools to browse the website. </p> <p> This may happen as a result of the following: </p> <ul> <li> Javascript is disabled or blocked by an extension (ad blockers for example) </li> <li> Your browser does not support cookies </li> </ul> <p> Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking them from loading. </p> <p> Reference ID: #503abb90-da2d-11e8-8080-2b01b9675790 </p> </div> </div> <div class="page-footer-wrapper"> <div class="page-footer"> <p> Powered by <a href="https://www.perimeterx.com/whywasiblocked">PerimeterX</a> , Inc. </p> </div> </div> </section> <!-- Px --> <script> window._pxAppId = 'PX0UqK4c76'; window._pxJsClientSrc = '/0UqK4c76/init.js'; window._pxFirstPartyEnabled = true; window._pxVid = ''; window._pxUuid = '503abb90-da2d-11e8-8080-2b01b9675790'; window._pxHostUrl = '/0UqK4c76/xhr'; </script> <script src="/0UqK4c76/captcha/captcha.js?a=c&u=503abb90-da2d-11e8-8080-2b01b9675790&v=&m=0"></script> <!-- Custom Script -->  </body> </html>'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (166.8ms)
+
+
+Started GET "/auth?code=ZUFC4N0HVTL34N0GRVFXSUDEOUJCXYBMPK1OXLXLZ5WBSELA" for ::1 at 2018-10-27 17:16:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"ZUFC4N0HVTL34N0GRVFXSUDEOUJCXYBMPK1OXLXLZ5WBSELA"}
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Access to this page has been denied.</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> <style> html, body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #000; } a { color: #c5c5c5; text-decoration: none; } .container { align-items: center; display: flex; flex: 1; justify-content: space-between; flex-direction: column; height: 100%; } .container > div { width: 100%; display: flex; justify-content: center; } .container > div > div { display: flex; width: 80%; } .customer-logo-wrapper { padding-top: 2rem; flex-grow: 0; background-color: #fff; visibility: hidden; } .customer-logo { border-bottom: 1px solid #000; } .customer-logo > img { padding-bottom: 1rem; max-height: 50px; max-width: 100%; } .page-title-wrapper { flex-grow: 2; } .page-title { flex-direction: column-reverse; } .content-wrapper { flex-grow: 5; } .content { flex-direction: column; } .page-footer-wrapper { align-items: center; flex-grow: 0.2; background-color: #000; color: #c5c5c5; font-size: 70%; } @media (min-width: 768px) { html, body { height: 100%; } } </style> <!-- Custom CSS -->  </head> <body> <section class="container"> <div class="customer-logo-wrapper"> <div class="customer-logo"> <img src="" alt="Logo"/> </div> </div> <div class="page-title-wrapper"> <div class="page-title"> <h1>Please verify you are a human</h1> </div> </div> <div class="content-wrapper"> <div class="content"> <div id="px-captcha"> </div> <p> Access to this page has been denied because we believe you are using automation tools to browse the website. </p> <p> This may happen as a result of the following: </p> <ul> <li> Javascript is disabled or blocked by an extension (ad blockers for example) </li> <li> Your browser does not support cookies </li> </ul> <p> Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking them from loading. </p> <p> Reference ID: #97d2d3c0-da2d-11e8-beea-b7602f313620 </p> </div> </div> <div class="page-footer-wrapper"> <div class="page-footer"> <p> Powered by <a href="https://www.perimeterx.com/whywasiblocked">PerimeterX</a> , Inc. </p> </div> </div> </section> <!-- Px --> <script> window._pxAppId = 'PX0UqK4c76'; window._pxJsClientSrc = '/0UqK4c76/init.js'; window._pxFirstPartyEnabled = true; window._pxVid = ''; window._pxUuid = '97d2d3c0-da2d-11e8-beea-b7602f313620'; window._pxHostUrl = '/0UqK4c76/xhr'; </script> <script src="/0UqK4c76/captcha/captcha.js?a=c&u=97d2d3c0-da2d-11e8-beea-b7602f313620&v=&m=0"></script> <!-- Custom Script -->  </body> </html>'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (219.5ms)
+
+
+Started GET "/friends" for ::1 at 2018-10-27 17:19:01 -0400
+Processing by SearchesController#friends as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=QTEPK0JLXJTHRWA401B1AAEDQ01YBMVMOT4TVUJZCSZGYVLZ&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=PUTORVLWTU42POHV5NAA0VSBCLJOR2R2KUMJSUZXFZHTX4VQ" for ::1 at 2018-10-27 17:19:04 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"PUTORVLWTU42POHV5NAA0VSBCLJOR2R2KUMJSUZXFZHTX4VQ"}
+Completed 500 Internal Server Error in 287ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Access to this page has been denied.</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> <style> html, body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #000; } a { color: #c5c5c5; text-decoration: none; } .container { align-items: center; display: flex; flex: 1; justify-content: space-between; flex-direction: column; height: 100%; } .container > div { width: 100%; display: flex; justify-content: center; } .container > div > div { display: flex; width: 80%; } .customer-logo-wrapper { padding-top: 2rem; flex-grow: 0; background-color: #fff; visibility: hidden; } .customer-logo { border-bottom: 1px solid #000; } .customer-logo > img { padding-bottom: 1rem; max-height: 50px; max-width: 100%; } .page-title-wrapper { flex-grow: 2; } .page-title { flex-direction: column-reverse; } .content-wrapper { flex-grow: 5; } .content { flex-direction: column; } .page-footer-wrapper { align-items: center; flex-grow: 0.2; background-color: #000; color: #c5c5c5; font-size: 70%; } @media (min-width: 768px) { html, body { height: 100%; } } </style> <!-- Custom CSS -->  </head> <body> <section class="container"> <div class="customer-logo-wrapper"> <div class="customer-logo"> <img src="" alt="Logo"/> </div> </div> <div class="page-title-wrapper"> <div class="page-title"> <h1>Please verify you are a human</h1> </div> </div> <div class="content-wrapper"> <div class="content"> <div id="px-captcha"> </div> <p> Access to this page has been denied because we believe you are using automation tools to browse the website. </p> <p> This may happen as a result of the following: </p> <ul> <li> Javascript is disabled or blocked by an extension (ad blockers for example) </li> <li> Your browser does not support cookies </li> </ul> <p> Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking them from loading. </p> <p> Reference ID: #ea6dfba0-da2d-11e8-9577-8b0d97a0d98c </p> </div> </div> <div class="page-footer-wrapper"> <div class="page-footer"> <p> Powered by <a href="https://www.perimeterx.com/whywasiblocked">PerimeterX</a> , Inc. </p> </div> </div> </section> <!-- Px --> <script> window._pxAppId = 'PX0UqK4c76'; window._pxJsClientSrc = '/0UqK4c76/init.js'; window._pxFirstPartyEnabled = true; window._pxVid = ''; window._pxUuid = 'ea6dfba0-da2d-11e8-9577-8b0d97a0d98c'; window._pxHostUrl = '/0UqK4c76/xhr'; </script> <script src="/0UqK4c76/captcha/captcha.js?a=c&u=ea6dfba0-da2d-11e8-9577-8b0d97a0d98c&v=&m=0"></script> <!-- Custom Script -->  </body> </html>'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (239.8ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /theresa_morelli.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (237.9ms)
